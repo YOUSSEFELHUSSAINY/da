@@ -1,0 +1,21 @@
+SELECT 
+    customerNumber, 
+    customerName, 
+    creditLimit
+FROM
+    customers
+ORDER BY creditLimit DESC
+LIMIT 3;
+
+SELECT* 
+FROM customers
+where creditLimit>=1000000 and customerNumber<200 or country="USA";
+
+SELECT 
+	customerNumber,
+    customerName,
+    creditLimit
+FROM
+    customers
+ORDER BY creditLimit DESC
+LIMIT 3;
